@@ -1,0 +1,156 @@
+/*Un élément avec position: relative 
+est positionné par rapport à sa position normale*/
+
+/*Un élément avec position: absolute 
+est positionné par rapport à l'ancêtre positionné le plus proche*/
+
+h1#header{
+
+
+    font-size: 24px;
+    color: aquamarine;
+    text-align: left;
+    /*text-decoration : enleve soulignement des lien*/
+    text-decoration: none;
+    padding-left: 65px;
+    margin: 0 0 30px;
+}
+
+
+
+div.nav ul{
+    text-align: left;
+    margin: 0 0 60px;
+    padding: 0px;
+
+  
+    
+    
+}
+/* aligner les puces horizontalement
+display : inline*/
+
+div.nav ul li{
+    
+    display: inline;
+ 
+    background-color: green;
+
+    padding-left: 5px;
+
+    border: brown solid 0.5px;
+
+
+
+  
+
+}
+
+div.main{
+    background : no-repeat;
+    padding: 20px 0;
+    margin: auto;
+    width:100% ;
+}
+
+
+div.nav ul li a.current{
+    background-color: green;
+    border: solid 1px greenyellow;
+    border-bottom-width: 0;
+    position: relative;
+    z-index: 2;
+    color: black;
+}
+
+
+div.nav ul li a.current:hover{
+    
+    border-bottom: 0;
+   
+   
+}
+
+div.nav ul li a:hover{
+
+    z-index: 2;
+    background-color: #5CAF1B;
+    border-bottom: 0;
+    border-color: aqua;
+   
+
+}
+
+div.nav ul li a:visited{
+
+    z-index: 2;
+    background-color: #CAF977;
+    border-bottom: 0;
+
+   
+
+}
+
+/*Changer couleur des liens par defaut*/
+div.nav ul li a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+div.nav a span{
+    display: none;
+    width: 240px;
+   
+   
+}
+
+div.content{
+    background-color: #78CC39;
+    border: dotted  black 2px;
+    z-index: 1;
+    padding: 1em;
+    border: dashed 2px #406480;
+    /* Preferable d utiliser la position abosulut ou relative plutot que float*/
+    position: absolute;
+    top: auto;
+    width: 700px;
+    margin-left: 10px;
+    margin-top: 5px;
+}   
+
+div.nav a:hover span{
+
+    display: block;
+    position: absolute;
+    top : 2.3em;
+    background-color: #DAEACC;
+    
+
+
+}
+
+#rightbox1{
+    width: 200px;
+    border: 2px dashed #406480;
+    position: absolute;
+   
+    top: auto;
+    left: 766px;
+    height: 176px;
+    padding-top: 10px ;
+    background-color: #FFFFFF;
+}
+
+
+#rightbox2{
+    width: 200px;
+    border: 2px dashed #406480;
+    position: absolute;
+   
+    top: 306px;
+    left: 766px;
+    height: 182px;
+    padding-top: 10px ;
+    background-color: #FFFFFF;
+}
