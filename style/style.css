@@ -4,6 +4,9 @@ est positionné par rapport à sa position normale*/
 /*Un élément avec position: absolute 
 est positionné par rapport à l'ancêtre positionné le plus proche*/
 
+body{
+    background-color: #F8E6C8 ;
+}
 h1#header{
 
 
@@ -14,14 +17,31 @@ h1#header{
     text-decoration: none;
     padding-left: 65px;
     margin: 0 0 30px;
+
+}
+
+/*style du logo*/
+div#logo{
+    font-size: 24px;
+    color: white;
+    background-color: orange;
+    height: 80px;
+    width: 12%;
+    text-align: left;
+    /*text-decoration : enleve soulignement des lien*/
+    text-decoration: none;
+    padding-left: 0px;
+    margin: 0 0 0px;
+
 }
 
 
-
-div.nav ul{
-    text-align: left;
-    margin: 0 0 60px;
+div#nav ul{
+    text-align: auto;
+    margin: 0 0 0px;
     padding: 0px;
+    display: inline;
+   
 
   
     
@@ -30,37 +50,27 @@ div.nav ul{
 /* aligner les puces horizontalement
 display : inline*/
 
-div.nav ul li{
+/* box Lorem1 | ...*/
+div#nav ul li{
     
     display: inline;
- 
-    background-color: green;
-
-    padding-left: 5px;
-
-    border: brown solid 0.5px;
-
-
-
-  
-
-}
-
-div.main{
-    background : no-repeat;
-    padding: 20px 0;
-    margin: auto;
-    width:100% ;
+    padding-right: 5px;
+    border-right: black solid;
 }
 
 
-div.nav ul li a.current{
-    background-color: green;
-    border: solid 1px greenyellow;
+
+
+
+div#nav ul li a{
+   display: inline;
+    color: gray;
+    text-decoration: none;
+   
     border-bottom-width: 0;
     position: relative;
     z-index: 2;
-    color: black;
+    
 }
 
 
@@ -99,7 +109,7 @@ div.nav ul li a{
 }
 
 div.nav a span{
-    display: none;
+    display: inline;
     width: 240px;
    
    
