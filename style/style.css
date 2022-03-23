@@ -7,18 +7,7 @@ est positionné par rapport à l'ancêtre positionné le plus proche*/
 body{
     background-color: #F8E6C8 ;
 }
-h1#header{
 
-
-    font-size: 24px;
-    color: aquamarine;
-    text-align: left;
-    /*text-decoration : enleve soulignement des lien*/
-    text-decoration: none;
-    padding-left: 65px;
-    margin: 0 0 30px;
-
-}
 
 /*style du logo*/
 div#logo{
@@ -35,18 +24,21 @@ div#logo{
 
 }
 
-
-div#nav ul{
-    text-align: auto;
-    margin: 0 0 0px;
-    padding: 0px;
-    display: inline;
-   
-
-  
+div#nav {
+    position: absolute;
+    right: 150px;
+    height: 40px;
     
-    
+    width: 100%;
+    text-align: center;
 }
+div#nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+
 /* aligner les puces horizontalement
 display : inline*/
 
@@ -54,7 +46,7 @@ display : inline*/
 div#nav ul li{
     
     display: inline;
-    padding-right: 5px;
+    padding-right: 10px;
     border-right: black solid;
 }
 
@@ -63,9 +55,12 @@ div#nav ul li{
 
 
 div#nav ul li a{
-   display: inline;
+    display: inline;
     color: gray;
     text-decoration: none;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
    
     border-bottom-width: 0;
     position: relative;
@@ -73,23 +68,14 @@ div#nav ul li a{
     
 }
 
-
-div.nav ul li a.current:hover{
+/*mettre texte en orange + souligner quand on survole le lien*/
+div#nav ul li a:hover{
+    border-bottom: 0;
+    color: orange;
+    text-decoration:underline;
     
-    border-bottom: 0;
-   
-   
 }
 
-div.nav ul li a:hover{
-
-    z-index: 2;
-    background-color: #5CAF1B;
-    border-bottom: 0;
-    border-color: aqua;
-   
-
-}
 
 div.nav ul li a:visited{
 
@@ -101,66 +87,73 @@ div.nav ul li a:visited{
 
 }
 
-/*Changer couleur des liens par defaut*/
-div.nav ul li a{
-    color: black;
-    text-decoration: none;
+
+h1 strong{
+
+    font-family: monospace;
+    font-size: 24px;
+    color: orange;
+    text-align: left;
+  
+    padding-left: 10px;
+    margin: 0 0 10 0px;
+}
+
+h2{
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: lighter;
+    padding-left: 10px;
+    text-transform: uppercase;
+
+}
+
+
+
+/*div image*/
+#boxr{
+    width: 216px;
+    
+    border: 0.5rem white solid ;
+    
+    position: absolute;
+   
+    top: auto;
+    right: 2%;
+    height: 288px;
+    padding-top: 0px ;
     
 }
 
-div.nav a span{
-    display: inline;
-    width: 240px;
-   
-   
-}
 
-div.content{
-    background-color: #78CC39;
-    border: dotted  black 2px;
+div#content{
+  
     z-index: 1;
     padding: 1em;
     border: dashed 2px #406480;
     /* Preferable d utiliser la position abosulut ou relative plutot que float*/
     position: absolute;
-    top: auto;
-    width: 700px;
+    top : 20%;
+    width: 65%;
+   
     margin-left: 10px;
     margin-top: 5px;
 }   
 
-div.nav a:hover span{
-
-    display: block;
-    position: absolute;
-    top : 2.3em;
-    background-color: #DAEACC;
+div#footer{
+        /*fixed --> fixer le footer sur le pied de page*/
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: white;
+        text-align: left;
+      
     
-
-
+    
 }
 
-#rightbox1{
-    width: 200px;
-    border: 2px dashed #406480;
-    position: absolute;
-   
-    top: auto;
-    left: 766px;
-    height: 176px;
-    padding-top: 10px ;
-    background-color: #FFFFFF;
-}
+/*couleur lien du footer a finir*/
 
-
-#rightbox2{
-    width: 200px;
-    border: 2px dashed #406480;
-    position: absolute;
-   
-    top: 306px;
-    left: 766px;
-    height: 182px;
-    padding-top: 10px ;
-    background-color: #FFFFFF;
-}
+/*Modifier dimension image*/
