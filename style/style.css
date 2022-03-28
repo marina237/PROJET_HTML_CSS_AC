@@ -112,15 +112,15 @@ h2{
 
 /*div image*/
 #boxr{
-    width: 216px;
+    width: 300px;
     
     border: 0.5rem white solid ;
     
     position: absolute;
    
-    top: auto;
-    right: 2%;
-    height: 288px;
+    top: 180px;
+    right: 10%;
+    height: 400px;
     padding-top: 0px ;
     
 }
@@ -147,13 +147,16 @@ div#footer{
         bottom: 0;
         width: 100%;
         background-color: white;
-        color: white;
+        color: black;
         text-align: left;
       
     
     
 }
 
-/*couleur lien du footer a finir*/
+a{
+    color: orange;
+}
 
-/*Modifier dimension image*/
+
+
